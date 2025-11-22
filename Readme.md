@@ -1,87 +1,69 @@
-# **Caesar Cipher Encryption Program**
-A simple Python program that performs **Encryption**, **Decryption**, and **Brute-Force Attacks** using the classical **Caesar Cipher** technique.
+Encryption & Decryption Tool (Command-Line Program)
+
+## **Overview**
+This project implements a command-line program that performs encryption and decryption using multiple classical and modern cryptographic techniques covered in Lab 2. The system supports substitution ciphers, transposition ciphers, Vigenère, AES, DES, and 3DES under various encryption modes.
 
 ---
 
-## ⭐ **Overview**
-The Caesar Cipher shifts each letter of the alphabet by a fixed key.  
-This program demonstrates:
+## **Implemented Algorithms**
 
-- ✔ **Encrypting** plaintext  
-- ✔ **Decrypting** ciphertext  
-- ✔ **Brute force attack** (trying all 26 keys)  
-- ✔ Menu-driven interface  
-- ✔ Case sensitivity (keeps uppercase/lowercase)  
-- ✔ Preserves spaces, numbers, and punctuation  
+### **Substitution Ciphers**
+- Shift (Caesar) Cipher  
+- Permutation Cipher  
 
----
+### **Transposition Ciphers**
+- Simple Transposition  
+- Double Transposition  
 
-## 🚀 **Features**
-- **Encryption:** Shifts letters forward by the key  
-- **Decryption:** Reverses the shift using the key  
-- **Brute Force:** Tests all possible keys (0–25)  
-- **Error Handling:** Warns for invalid key inputs  
-- Works on **Windows, macOS, and Linux**
+### **Polyalphabetic Cipher**
+- Vigenère Cipher  
 
----
+### **Modern Algorithms**
+- AES-128  
+- DES  
+- 3DES  
 
-## 📂 **Files Included**
-caesar_cipher.py
-README.md
-
+### **Supported Modes**
+- ECB  
+- CBC  
+- CFB  
+- OFB  
+- CTR  
 
 ---
 
-## 🛠️ **How to Run the Program**
+## **Features**
+✔ Encrypt & decrypt  
+✔ Default or custom keys  
+✔ Supports multiple cipher types  
+✔ Clear menu-driven interface  
+✔ Uses Python's `cryptography` library for modern algorithms  
 
-### 1. Save the Script
-Save the Python code as:
+---
 
-
-
-caesar_cipher.py
-
-
-### 2. Open Terminal / Command Prompt
-Navigate to the folder:
-
+## **Usage**
+### **Run the tool**
 ```bash
-cd path/to/your/file
+python crypto_tool.py
+Requirements
+Install dependencies:
 
-3. Run the Program
-python caesar_cipher.py
+bash
+Copy code
+pip install cryptography
+Challenges Encountered
+Understanding AES/DES block operations and key scheduling
 
+Ensuring secure IV and key handling
 
-or
+Input validation for plaintext and keys
 
-python3 caesar_cipher.py
+Debugging multi-step encryption functions
 
-📌 Usage Example
-Encryption
-Enter text: HacK
-Enter key: 3
-Ciphertext: KdfN
+Managing performance for large messages
 
-Decryption
-Enter text: KdfN
-Enter key: 3
-Decrypted plaintext: HacK
-
-Brute Force Attack
-Enter ciphertext: KdfN
-Key 0: KdfN
-Key 1: JceM
-Key 2: IbdL
-Key 3: HacK   <-- correct key
-...
-
-🧠 Concepts Demonstrated
-
-Classical Cryptography
-
-Substitution Ciphers
-
-Brute-force Cryptanalysis
+Conclusion
+This assignment provided hands-on experience implementing both classical and modern cryptography algorithms. The modular design, improved error handling, and secure key/IV usage make the tool extensible and practical for educational use.
 
 ASCII Shifting Logic
 
