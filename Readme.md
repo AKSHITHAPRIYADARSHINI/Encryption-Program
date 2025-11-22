@@ -1,7 +1,7 @@
 Encryption & Decryption Tool (Command-Line Program)
 
 ## **Overview**
-This project implements a command-line program that performs encryption and decryption using multiple classical and modern cryptographic techniques covered in Lab 2. The system supports substitution ciphers, transposition ciphers, Vigenère, AES, DES, and 3DES under various encryption modes.
+This project implements a command-line program that performs encryption and decryption using multiple classical and modern cryptographic techniques. The system supports substitution ciphers, transposition ciphers, Vigenère, AES, DES, and 3DES under various encryption modes.
 
 ---
 
